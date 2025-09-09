@@ -12,6 +12,10 @@ dependencies = ["pydantic>=2.11.7"]
 urls = { Homepage = "https://github.com/Apauto-to-all/structured_output_prompt" }
 
 
+[dependency-groups]
+dev = ["pytest>=8.4.2"]
+
+
 # 发布testpypi
 [[tool.uv.index]]
 name = "testpypi"
@@ -25,10 +29,12 @@ explicit = true
 name = "tuna"
 url = "https://pypi.tuna.tsinghua.edu.cn/simple"
 
+
 # 添加阿里云备用源
 [[tool.uv.index]]
 name = "aliyun"
 url = "https://mirrors.aliyun.com/pypi/simple/"
+
 
 # 最后默认源
 [[tool.uv.index]]
